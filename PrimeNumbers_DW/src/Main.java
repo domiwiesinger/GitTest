@@ -1,9 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        int max = 10000;
+        int max = 100;
         EratosthenesPrimeSieve primeSieve = new EratosthenesPrimeSieve(max);
-        for (int i = 2; i < max; i++) {
+        for (int i = 0; i < max; i++) {
             primeSieve.isPrime(i);
 
         }
