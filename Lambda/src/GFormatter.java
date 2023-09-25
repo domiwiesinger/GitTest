@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface GFormatter {
+public interface GFormatter <T>{
+    T format(String s);
 }
