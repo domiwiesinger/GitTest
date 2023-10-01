@@ -12,6 +12,33 @@ public class Main {
             return false;
         });
 
+        tester.setPrimeTester(number -> {
+
+                for (int i = 2; i <= Math.sqrt(number); i++) {
+                    if (number % i == 0){
+                        return false;
+                    }
+                }
+                return true;
+        });
+
+        tester.setPalindromeTest(number -> {
+
+            String numb = String.valueOf(number);
+            String backwards;
+            StringBuilder reversedString = new StringBuilder(numb);
+            backwards = reversedString.reverse().toString();
+
+
+            if (numb.equals(backwards)){
+                return true;
+            }
+            else {
+                return false;
+            }
+
+        });
+
         tester.testFile();
     }
 }

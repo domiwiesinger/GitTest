@@ -49,7 +49,7 @@ public class NumberTester {
                     }
                 }
                 else if (Integer.parseInt(parts[0]) == 3){
-                    if (primeTester.testNumber(Integer.parseInt(parts[1]))) {
+                    if (palindromeTest.testNumber(Integer.parseInt(parts[1]))) {
                         System.out.println("PALINDROME");
                     }
                     else {
